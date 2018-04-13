@@ -1,7 +1,17 @@
 <ActionBar title="NativesApp" class="action-bar">
 	<label text="NativesApp" class="action-bar-title" horizontalAlignment="left" ></label>
-	<ActionItem text="Edit" android.position="actionBarIfRoom">
-	</ActionItem>
+	<ng-container *ngIf="platform.isAndroid">
+		<ActionItem text="New Group" android.position="popup">
+		</ActionItem>
+		<ActionItem text="New Broadcast" android.position="popup">
+		</ActionItem>
+		<ActionItem text="NativeApp Web" android.position="popup">
+		</ActionItem>
+		<ActionItem text="StarredMessages" android.position="popup">
+		</ActionItem>
+		<ActionItem text="Settings" android.position="popup">
+		</ActionItem>
+	</ng-container>		
 
 
 </ActionBar>
