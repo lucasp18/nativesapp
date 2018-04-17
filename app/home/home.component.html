@@ -1,9 +1,14 @@
-<ActionBar class="action-bar link">
+<ActionBar class="action-bar link" 
+icon="res://icon" 
+android.iconVisibility="always">	
   <Label text="NativesApp" class="action-bar-title"
     [class.h1]="platform.isIOS"
     android:horizontalAlignment="left"
     ios:horizontalAlignment="center"></Label>
   <ng-container *ngIf="platform.isAndroid">
+    <ActionItem>
+      <button class="mdi action-bar-button" [text]="'mdi-search' |fonticon" ></button>
+    </ActionItem>
     <ActionItem
       android.position="popup"
       text="New group">
