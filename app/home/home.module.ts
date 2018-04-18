@@ -4,6 +4,7 @@ import { TNSFontIconModule } from 'nativescript-ngx-fonticon';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { HomeComponent } from './home.component';
     })
   ],
   declarations: [
-    HomeComponent
+    HomeComponent,
+    TabsComponent
   ],
   schemas: [
     NO_ERRORS_SCHEMA
