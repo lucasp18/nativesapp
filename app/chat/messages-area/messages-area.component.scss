@@ -7,24 +7,34 @@
     padding: 0 10 10 10;
 
     .message-bubble {
-      align-items: flex-start;
-      flex-wrap: wrap;
       margin: 10 15 0 0;
-      border-radius: 8;
-      background-color: white;
+      
 
       &.myself {
         align-self: flex-end;
-        background-color: #dcf8c6;
         margin-right: 0;
         margin-left: 15;
+
+        .message-bubble-content{
+          background-color: #dcf8c6;
+        }
+
+        
+        
       }
 
       &.continuation {
-        margin-top: 1;
+        margin-top: 5;
       }
 
-      .message-text {
+      .message-bubble-content {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        border-radius: 8;
+        background-color: white;
+
+        .message-text {
         color: #8D1B1B;
         font-size: 15;
         margin: 5;
@@ -51,6 +61,9 @@
           }
         }
       }
+      }
+
+      
     }
   }
 }
